@@ -16,7 +16,7 @@
   <widget class="QLabel" name="appname">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>250</x>
      <y>60</y>
      <width>181</width>
      <height>41</height>
@@ -27,7 +27,7 @@
 color: white;</string>
    </property>
    <property name="text">
-    <string>TextPad</string>
+    <string>QTPad</string>
    </property>
    <property name="scaledContents">
     <bool>false</bool>
