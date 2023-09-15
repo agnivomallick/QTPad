@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Agnivo Mallick</author>
+ <class>main_win</class>
+ <widget class="QMainWindow" name="main_win">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>699</width>
+    <height>379</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Untitled</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>qtpad_win_icon.png</normaloff>qtpad_win_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>699</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="newact"/>
+    <addaction name="open"/>
+    <addaction name="save"/>
+    <addaction name="saveas"/>
+    <addaction name="exit"/>
+   </widget>
+   <widget class="QMenu" name="edit_menu">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="undo"/>
+    <addaction name="redo"/>
+    <addaction name="separator"/>
+    <addaction name="copy"/>
+    <addaction name="cut"/>
+    <addaction name="paste"/>
+   </widget>
+   <widget class="QMenu" name="theme_menu">
+    <property name="title">
+     <string>Themes</string>
+    </property>
+    <addaction name="defaulttheme"/>
+    <addaction name="blacktheme"/>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="edit_menu"/>
+   <addaction name="theme_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="newact">
+   <property name="icon">
+    <iconset>
+     <normaloff>new.png</normaloff>new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="statusTip">
+    <string>Create a new file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="open">
+   <property name="icon">
+    <iconset>
+     <normaloff>open.jpeg</normaloff>open.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="statusTip">
+    <string>Open a file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="icon">
+    <iconset>
+     <normaloff>save.png</normaloff>save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="statusTip">
+    <string>Save a file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveas">
+   <property name="icon">
+    <iconset>
+     <normaloff>saveas.png</normaloff>saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+   <property name="statusTip">
+    <string>Save file using a new filename</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F12</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="icon">
+    <iconset>
+     <normaloff>exit.jpeg</normaloff>exit.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="undo">
+   <property name="icon">
+    <iconset>
+     <normaloff>undo.jpg</normaloff>undo.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="statusTip">
+    <string>Undo action</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="redo">
+   <property name="icon">
+    <iconset>
+     <normaloff>redo.jpeg</normaloff>redo.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="statusTip">
+    <string>Reverse the Undo action</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="copy">
+   <property name="icon">
+    <iconset>
+     <normaloff>copy.png</normaloff>copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="statusTip">
+    <string>Copy text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="cut">
+   <property name="icon">
+    <iconset>
+     <normaloff>cut.png</normaloff>cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="statusTip">
+    <string>Cut text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="paste">
+   <property name="icon">
+    <iconset>
+     <normaloff>paste.jpeg</normaloff>paste.jpeg</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="statusTip">
+    <string>Paste text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="defaulttheme">
+   <property name="text">
+    <string>Default</string>
+   </property>
+   <property name="statusTip">
+    <string>Apply default theme</string>
+   </property>
+  </action>
+  <action name="blacktheme">
+   <property name="text">
+    <string>Black</string>
+   </property>
+   <property name="statusTip">
+    <string>Apply black theme</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
